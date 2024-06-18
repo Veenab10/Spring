@@ -1,3 +1,6 @@
+<%@ page  isELIgnored="false"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <html>
 <head>
 <title>Index</title>
@@ -8,18 +11,17 @@
 <nav class="navbar navbar-light bg-info">
   <div class="container-fluid">
 
-    <a href="collegeUniform.jsp" <span  class="navbar-brand mb-0 h1">CollegeUniformForm</span></a>
-    <a href="search.jsp" <span  class="navbar-brand mb-0 h1">Search</span></a>
+    <a href="index.jsp" <span  class="navbar-brand mb-0 h1">Home</span></a>
+
 
   </div>
 </nav>
 <div class="d-flex justify-content-center mt-3 mb-2 align-items-center vh-80">
 <div class="card" style="width: 25rem;">
   <div class="card-body">
-    <h5 class="card-title">Xworkz</h5>
-    <h6 class="card-subtitle mb-2 text-muted"></h6>
-    <p class="card-text"></p>
+    <strong style="color:green;">Search result for , ${collegeName}</strong>
 
+       ${listOfCollegeUniform}
     </div>
   </div>
 </div>

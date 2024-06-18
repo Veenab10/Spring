@@ -30,7 +30,7 @@ public class CollegeUniformController {
         System.out.println("Dto Details:"+collegeUniformDto);
         bindingResult
                 .getAllErrors()
-                .forEach(objectError -> System.out.println(objectError.getDefaultMessage()));
+                .forEach(objectError -> System.err.println(objectError.getDefaultMessage()));
         model.addAttribute("errors",bindingResult.getAllErrors());
 
         if(bindingResult.hasErrors())

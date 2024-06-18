@@ -43,12 +43,12 @@
      <div class="form-group">
              <label for="collegeName">Select College</label>
              <select class="form-control" name="collegeName" id="collegeName" onblur="collegeNameValidation()">
-                 <option selected value="">Select College</option>
-                 <option value="JSS">JSS</option>
-                 <option value="SMI">SMI</option>
-                 <option value="GIT">GIT</option>
-                 <option value="BIT">BIT</option>
-                 <option value="GMIT">GMIT</option>
+             <option ${dto.collegeName==null ? 'selected' : ''}  selected value=" ">Select College</option>
+                 <option value="JSS" ${dto.collegeName eq 'JSS' ? 'selected' : ''}>JSS</option>
+                 <option value="SMI"  ${dto.collegeName eq 'SMI' ? 'selected' : ''}>SMI</option>
+                 <option value="GIT"  ${dto.collegeName eq 'GIT' ? 'selected' : ''}>GIT</option>
+                 <option value="BIT"  ${dto.collegeName eq 'BIT' ? 'selected' : ''}>BIT</option>
+                 <option value="GMIT"  ${dto.collegeName eq 'GMIT' ? 'selected' : ''}>GMIT</option>
              </select>
              <span id="collegeNameError"></span>
          </div>
@@ -59,11 +59,11 @@
      <div>
      <label>Gender</label>
      <div class="form-check">
-       <input class="form-check-input position-static" type="radio" name="gender" id="gender"  onblur="validateForm()" value="${dto.gender}" id="gender" value="male" aria-label="...">Male
+       <input class="form-check-input position-static" type="radio" name="gender" id="gender"  onblur="validateForm()"   value="male" ${dto.gender eq 'male' ? 'checked' : ''} aria-label="...">Male
        </div>
 
      <div class="form-check">
-            <input class="form-check-input position-static" type="radio" name="gender" id="gender"  onblur="validateForm()" value="${dto.gender}" id="gender" value="female" aria-label="...">Female
+            <input class="form-check-input position-static" type="radio" name="gender" id="gender"  onblur="validateForm()"   value="female" ${dto.gender eq 'female' ? 'checked' : ''} aria-label="...">Female
       </div>
      </div>
      <span id="genderError"></span>

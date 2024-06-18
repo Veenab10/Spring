@@ -5,8 +5,9 @@ function nameValidation() {
    var nameRegex = /^[A-Za-z]+$/;
 
     if ( nameInput !=null && nameInput.length >= 4 && nameInput.length <= 20 && nameRegex.test(nameInput)) {
-        nameError.innerHTML = "Entered name is correct";
-        nameError.style.color = 'green';
+
+//         nameError.innerHTML = "Entered name is correct";
+//         nameError.style.color = 'green';
         sendButton.removeAttribute("disabled");
     }
     else {
@@ -24,8 +25,8 @@ function rollNoValidation()
     var rollNoRegex = /^[A-Za-z0-9]+$/;
 
         if ( rollNoInput !=null && rollNoInput.length >= 4 && rollNoInput.length <= 10 && rollNoRegex.test(rollNoInput)) {
-            rollNoError.innerHTML = "Entered roll number is correct";
-            rollNoError.style.color = 'green';
+//            rollNoError.innerHTML = "Entered roll number is correct";
+//            rollNoError.style.color = 'green';
             sendButton.removeAttribute("disabled");
         }
         else {
@@ -53,8 +54,8 @@ function collegeNameValidation()
 
     	}
     	else{
-    	collegeNameError.innerHTML = "Entered college name is correct";
-        collegeNameError.style.color = 'green';
+//    	collegeNameError.innerHTML = "Entered college name is correct";
+//        collegeNameError.style.color = 'green';
         sendButton.removeAttribute("disabled");
     	}
 }
@@ -79,8 +80,8 @@ function validateForm() {
                 genderError.innerHTML = "Please select a gender";
                 genderError.style.color = 'red';
             } else {
-                genderError.innerHTML = "gender selected";
-                genderError.style.color = 'green';
+//                genderError.innerHTML = "gender selected";
+//                genderError.style.color = 'green';
 
             }
 
@@ -89,8 +90,8 @@ function validateForm() {
                 checkboxError.innerHTML = "Please confirm the information is correct";
                 checkboxError.style.color = 'red';
             } else {
-                checkboxError.innerHTML = "Information confirmed";
-                 checkboxError.style.color = 'green';
+//                checkboxError.innerHTML = "Information confirmed";
+//                 checkboxError.style.color = 'green';
             }
 
             if (genderSelected && checkbox.checked) {
